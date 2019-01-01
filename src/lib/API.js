@@ -1,4 +1,4 @@
-const API_URL = 'https://api-g.weedmaps.com/wm/v2/listings?filter[bounding_box]=39.5861114497988,-105.28026580810547,39.84202241328677,-104.79755401611328&filter[plural_types][]=doctors&filter[plural_types][]=dispensaries&filter[plural_types][]=deliveries&size=100';
+const API_URL = 'https://api-g.weedmaps.com/discovery/v1/listings?filter%5Bany_retailer_services%5D%5B%5D=doctor&filter%5Bany_retailer_services%5D%5B%5D=storefront&filter%5Bany_retailer_services%5D%5B%5D=delivery&filter%5Bregion_slug%5Bdeliveries%5D%5D=santa-maria-lompoc-solvang&filter%5Bregion_slug%5Bdispensaries%5D%5D=santa-maria-lompoc-solvang&filter%5Bregion_slug%5Bdoctors%5D%5D=central-coast&page_size=100&size=100';
 
 export default {
   getListings(page, pageSize) {
